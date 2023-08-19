@@ -1,0 +1,31 @@
+extend base.pug
+
+block scripts 
+    scripts(src=' /static/index.js')
+block style 
+    style
+        <link  rel="stylesheet" href="https://fonts.cdnfonts.com/css/gotham-6">
+        include ../static/style.css
+        include ../static/stylecontact.css
+block content 
+    section#contact
+        h1 Contact Us
+        form(action='/contact' method='POST' id='form1')
+            label(for='name') Name:
+            input(type='text' id='name' name='name' placeholder='Enter Name')
+            label(for='num1') Age:
+            input(type='number' id='age' name='num1' placeholder='Enter age')
+            label(for name='gender') Gender:
+            select(name="gender") 
+                option(value='Male') Male
+                option(value='Female') Female
+                option(value='others') Others
+            label(for name='address') Address:
+            textarea(name='address' id='add' placeholder=' Enter address' cols='30' row=' 30')
+            label(for name='message') Message:
+            textarea(name='message' id='mes' placeholder=' Enter your message' cols='30' row=' 30')
+            button(id='btn2') Submit
+
+
+//- now for backedn we start by using a new terminal and installing mongoose
+//- after than we use mongosh to connect to database 

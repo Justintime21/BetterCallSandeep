@@ -1,0 +1,41 @@
+//- extending the base template using template inheritence here 
+extend base.pug
+
+block scripts 
+    scripts(src=' /static/index.js')
+block style 
+    style
+        <link  rel="stylesheet" href="https://fonts.cdnfonts.com/css/gotham-6">
+        include ../static/style.css
+
+block content 
+    section#home 
+        div#home1
+            h1 Welcome to BetterCallSandeep Website
+            p You want to know your rights? We got you!
+            p You want to become a lawyer? We got you!
+            button(id='btn1') Apply Now
+    section#topics   
+        h1 Topics
+        div#topics1
+            div.card1
+                h1 Consultaion
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil veritatis quisquam illo hic labore expedita non inventore. Dicta, officiis et?
+            div.card1
+                h1 Consultaion
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil veritatis quisquam illo hic labore expedita non inventore. Dicta, officiis et?
+            div.card1
+                h1 Consultaion
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil veritatis quisquam illo hic labore expedita non inventore. Dicta, officiis et?
+            div.card1
+                h1 Consultaion
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil veritatis quisquam illo hic labore expedita non inventore. Dicta, officiis et?
+    section#sponsers 
+        h1 Our Sponsers    
+        div#sponsers1
+            img(src='/static/img/5296499_fb_facebook_facebook logo_icon.png')
+            img(src='/static/img/5296501_linkedin_network_linkedin logo_icon.svg')
+            img(src='/static/img/5296516_tweet_twitter_twitter logo_icon.png')
+            img(src='/static/img/5296765_camera_instagram_instagram logo_icon.svg')
+
+

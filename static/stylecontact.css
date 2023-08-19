@@ -1,0 +1,80 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+#navbar{
+    font-family: 'Gotham Book', sans-serif;
+    height:80px;
+    width:1544px;
+    margin:-8px -8px 0px -8px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(104, 101, 97);
+    position:sticky;
+    top:0px;
+}
+#contact{
+  
+    font-family: 'Gotham Book', sans-serif;
+    padding: 5px;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form1{
+    
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+}
+
+input{
+    width: 369px;
+    height: 34px;
+    border-radius: 8px;
+    box-shadow: 2px 2px #f5bf6f;
+}
+textarea{
+    width: 369px;
+    height: 163px;
+    border-radius: 8px;
+    box-shadow: 2px 2px #f5bf6f;
+}
+#btn2{
+    margin-top: 17px;
+    height: 37px;
+    width: 84px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #abce89;
+}
+#btn2:hover{
+    margin-top: 17px;
+    height: 37px;
+    width: 84px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #7ca850;
+}
+footer{
+    font-family: 'Gotham Book', sans-serif;
+    position: relative;
+    top: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 1545px;
+    text-align: center;
+    color: white;
+    margin-left: -9px;
+    height: 33px;
+}
